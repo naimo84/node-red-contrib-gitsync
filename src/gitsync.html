@@ -1,0 +1,73 @@
+<script type="text/javascript">
+
+
+    RED
+        .nodes
+        .registerType('gitsync', {
+            category: 'gitsync',
+            defaults: {
+                source:{},
+                destination:{}
+               
+            },
+            inputs: 1,
+            outputs: 1,
+           
+            color: "#DEBD5C",
+            label: function () {
+                if (this.name) {
+                    return this.name;
+                } else if (this.confignode.name) {
+                    return this.confignode.name;
+                }
+
+                return "gitsync";
+            },
+            icon: "font-awesome/fa-cloud",
+            paletteLabel: "gitsync",
+            oneditprepare: function () {
+                var node = this;                
+            }
+        });
+</script>
+
+<script type="text/x-red" data-template-name="gitsync">
+    <style>
+        .event {
+            display:flex;
+        }
+        .event input {
+            flex:1
+        }
+        .event select {
+            flex:2
+        }
+        .event label {
+            min-width: 110px;
+            align-self: center;
+        }  
+        .padding-top {
+            padding-top: 10px;
+        }
+    </style>   
+
+    <div class="form-row event">        
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span>Name</span></label>
+        <input type="text" id="node-input-name">
+    </div>
+    <hr/>
+    <div class="form-row event">
+        <label for="node-input-source"><i class="fa fa-globe"></i> <span>source</span></label>
+        <input type="text" id="node-input-source">
+    </div>
+    <div class="form-row event">
+        <label for="node-input-destination"><i class="fa fa-globe"></i> <span>destination</span></label>
+        <input type="text" id="node-input-destination">
+    </div>
+    
+</script>
+
+<!-- Simple Help Text -->
+<script type="text/x-red" data-help-name="gitsync">
+   
+</script>
