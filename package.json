@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-gitsync",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NodeRed gitsync adapter",
   "author": {
     "name": "naimo84",
@@ -39,7 +39,7 @@
     "release": "standard-version",
     "release-minor": "standard-version --release-as minor",
     "build": "gulp",
-    "dev":"gulp develop"
+    "dev": "gulp develop"
   },
   "dependencies": {
     "simple-git": "^2.31.0"

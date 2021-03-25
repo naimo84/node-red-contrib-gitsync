@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.2 (2021-03-25)
+
 ## [1.0.0-beta.1](https://github.com/naimo84/node-red-contrib-ical-events/compare/v0.22.0...v1.0.0-beta.1) (2021-01-17)
 
 
