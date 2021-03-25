@@ -30,6 +30,7 @@ module.exports = function (RED: any) {
     async function processInput(node, msg: NodeMessageInFlow, send: (msg: NodeMessage | NodeMessage[]) => void, done: (err?: Error) => void, config) {
         try {
             const git: SimpleGit = simpleGit();
+            fs.rmdirSync('source', { recursive: true });
             await git.clone(node.source, 'source')
             await git.cwd('source')
             await git.addRemote('secondary', node.destination)
