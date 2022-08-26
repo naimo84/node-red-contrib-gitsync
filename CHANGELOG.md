@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/naimo84/node-red-contrib-gitsync/compare/v0.0.2...v0.0.4) (2022-08-26)
+
+
+### Features
+
+* check if source exists ([82f9e4a](https://github.com/naimo84/node-red-contrib-gitsync/commit/82f9e4a6dab4839e8287031930c488a36d6b6ddb))
+* rmdir before sync ([714469d](https://github.com/naimo84/node-red-contrib-gitsync/commit/714469d1d70a08d9eeb251c153ade7f2e61f98ed))
+
 ### [0.0.3](https://github.com/naimo84/node-red-contrib-gitsync/compare/v0.0.2...v0.0.3) (2021-05-07)
 
 
